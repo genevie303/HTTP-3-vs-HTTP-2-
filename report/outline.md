@@ -2,21 +2,16 @@
 
 Working title: *Can HTTP/3 Save Your Campus WiFi? Measuring QUIC vs TCP under Real and Simulated Network Conditions*
 
-| Section | Writer | Due |
-| --- | --- | --- |
-| 1. Introduction and motivation | C | Dec 18 |
-| 2. Background: TCP + TLS vs QUIC, head-of-line blocking, handshakes | A | Dec 17 |
-| 3. Testbed and method: diagram, conditions, metrics, versions | A (testbed), B (method) | Dec 17 |
-| 4. Controlled results: line charts and heatmaps | B | Dec 17 |
-| 5. Real-world results on campus | C | Dec 18 |
-| 6. Discussion and limitations | C | Dec 18 |
-| 7. Conclusion and recommendation | C | Dec 18 |
+Each section has its own file in `report/sections/` with what to cover and a Draft area. C merges them into `report/final/`.
 
-Each writer drafts their section as `report/<number>-<name>.md`; C merges them into the final report.
+| Section | File | Writer | Target words | Due |
+| --- | --- | --- | --- | --- |
+| 1. Introduction and motivation | `sections/01-introduction.md` | C | 150 | Dec 18 |
+| 2. Background: TCP + TLS vs QUIC | `sections/02-background.md` | A | 250 | Dec 17 |
+| 3. Testbed and method | `sections/03-method.md` | A + B | 250 | Dec 17 |
+| 4. Controlled results | `sections/04-controlled-results.md` | B | 250 | Dec 17 |
+| 5. Real-world results on campus | `sections/05-real-world.md` | C | 150 | Dec 18 |
+| 6. Discussion and limitations | `sections/06-discussion.md` | C | 150 | Dec 18 |
+| 7. Conclusion and recommendation | `sections/07-conclusion.md` | C | 100 | Dec 18 |
 
-## Facts to record for section 3
-
-- Caddy version:
-- Chromium version (Playwright):
-- VM: CPUs, RAM, Ubuntu version:
-- Test pages: small.html = 50 images of 200x200 px; big.html = 5 MB; grid.html = 200 tiles
+Total target: about 1300 words, safely above the 1000-word minimum.

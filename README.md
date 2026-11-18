@@ -4,6 +4,8 @@ ZJU Computer Networks final project (自主创新类).
 
 **Question:** Does HTTP/3 (QUIC over UDP) load pages faster than HTTP/2 (TCP + TLS), and under which network conditions?
 
+What still has to be handed in: see [`SUBMISSION_CHECKLIST.md`](SUBMISSION_CHECKLIST.md).
+
 ## Team
 
 | Role | Person | Owns |
@@ -15,10 +17,17 @@ ZJU Computer Networks final project (自主创新类).
 ## Folder layout
 
 ```
-server/     Testbed: Caddyfile, setup and run scripts, test page generator   (A)
-scripts/    netem helper, measurement, experiment runner, analysis, demo      (B, C)
-data/       results.csv (lab), real_results.csv (campus), figures/            (B, C)
-report/     Report outline and drafts                                          (all)
+server/              Testbed: Caddyfile, setup and run scripts, test page generator      (A)
+scripts/             netem helper, measurement, experiment runner, analysis, demo         (B, C, A)
+data/                results.csv, real_results.csv, real_sites.md, ping_baselines.md, figures/  (B, C)
+report/outline.md    Who writes which section, word targets, due dates                    (all)
+report/sections/     One file per report section, drafted by its writer                    (all)
+report/final/        Merged final report (.docx / .pdf)                                     (C)
+slides/outline.md    15-minute plan: speaker, minutes, notes per part                      (all)
+slides/final/        Merged slide deck                                                      (C)
+demo/                Demo script and backup video link                                      (A)
+notes/               Meeting notes, environment and versions                                (all)
+SUBMISSION_CHECKLIST.md   Everything the course requires, to tick off                       (all)
 ```
 
 Generated files (certificates, test pages, the Python venv) live in `~/h3proj/` on each VM and are **not** committed.
@@ -64,5 +73,5 @@ bash scripts/netem.sh reset
 ## Rules
 
 - Never rename the CSV columns: `analyze.py` reads them by name.
-- Never commit `*.pem` keys or the venv (see `.gitignore`).
+- Never commit `*.pem` keys, the venv, or video files (see `.gitignore`).
 - Stress-test only our own server. Real sites: 10 loads per site, normal browsing volume.

@@ -18,3 +18,8 @@ data/test.csv
 .DS_Store
 Thumbs.db
 .vscode/
+
+# Demo videos: too large for Git, share a cloud link instead
+*.mp4
+*.mov
+*.mkv
