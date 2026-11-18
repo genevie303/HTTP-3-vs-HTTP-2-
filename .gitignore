@@ -24,3 +24,4 @@ Thumbs.db
 *.mov
 *.mkv
 data/results_raw_backup.csv
+data/results_raw_backup2.csv
