@@ -1,0 +1,20 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# TLS keys and certificates: generated per machine, never committed
+*.pem
+*.key
+*.crt
+
+# Large generated test files
+*.bin
+
+# Scratch output from sanity checks
+data/test.csv
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/

@@ -1,0 +1,12 @@
+{
+    servers {
+        protocols h1 h2 h3
+    }
+}
+
+localhost:8443 {
+    tls {$HOME}/h3proj/certs/cert.pem {$HOME}/h3proj/certs/key.pem
+    root * {$HOME}/h3proj/site
+    file_server
+    header Cache-Control "no-store"
+}
