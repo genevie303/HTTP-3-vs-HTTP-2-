@@ -1,0 +1,13 @@
+rtt_ms,loss_pct,page,proto_wanted,proto_got,run,connect_ms,ttfb_ms,load_ms,done_ms,error
+100,3.0,small.html,h2,h2,1,209,313.7,860.4,,
+100,3.0,small.html,h3,h3,1,105.1,209.7,6279.7,,
+100,3.0,big.html,h2,h2,1,205.2,321,334.5,1606.3,
+100,3.0,big.html,h3,h3,1,103,207.4,219.6,24454.9,
+100,3.0,small.html,h2,,1,,,,,Error
+100,3.0,small.html,h3,,1,,,,,Error
+100,3.0,big.html,h2,,1,,,,,Error
+100,3.0,big.html,h3,,1,,,,,Error
+100,3.0,small.html,h2,h2,1,208,312,1098.4,,
+100,3.0,small.html,h3,h3,1,107.2,212.2,5751.7,,
+100,3.0,big.html,h2,h2,1,206.1,309.4,333.8,1997.5,
+100,3.0,big.html,h3,h3,1,106,211.3,220.4,27369.1,
