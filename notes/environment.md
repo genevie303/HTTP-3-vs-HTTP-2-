@@ -30,12 +30,13 @@ Fill this in once the testbed works. It goes into report section 3.
 One run only, so no conclusions yet. On a perfect network HTTP/3 was slightly slower, which fits QUIC running in user space (more CPU per packet). The interesting part is what happens once loss and delay are added.
 
 ## Measurement VM (B)
-
-- Ubuntu version:
-- CPUs / RAM:
-- Python version (`python3 --version`):
-- Playwright version (`pip show playwright`):
-- Chromium version (printed by Playwright, or `chrome://version` in the demo window):
+- Ubuntu Version : Ubuntu 22.04.5 LTS, running on WSL2 (WSL 2.7.3.0, kernel 6.6.114.1-1, Windows 11 build 10.0.26200)
+- CPUs / RAM:18 logical CPUs / 7.5 GiB RAM (2 GiB swap)
+- Python version (`python3 --version`):3.10.12
+- Playwright version (`pip show playwright`):1.65.2
+- Chromium version (printed by Playwright, or `chrome://version` in the demo window): 159.0.8154.6
+- Caddy version: v2.11.9
+- Notes: Caddy and Chromium ran on the same WSL2 machine, with netem on the loopback interface.
 
 ## Campus laptop (C)
 
