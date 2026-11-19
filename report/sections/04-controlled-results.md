@@ -14,7 +14,7 @@
 Figures 1 and 2 show the speedup (median HTTP/2 time divided by median HTTP/3 time) for each of the 12 network conditions. Values above 1 mean HTTP/3 was faster. All results are from runs with the loopback MTU set to 1500 bytes (see Section 3).
 
 Speedup heatmap, small.html
-![alt text](image.png)
+<img width="1100" height="700" alt="image" src="https://github.com/user-attachments/assets/07458510-2b11-4c21-a43d-63511ce0b834" />
 Speedup heatmap, big.html
 ![alt text](image-1.png)
 
