@@ -25,9 +25,9 @@ Exceptions. HTTP/3 was slower in three conditions, all with 1 % loss: big.html a
 Research question 2: many small files vs one large file. Both pages showed the same overall pattern. HTTP/3 gained more on the small-file page at low RTT (2.52 and 2.68 at RTT 20 ms with 1 % and 3 % loss), while the large file gained about 2× at RTT 100 ms and 5 % loss. A possible explanation, which we did not test separately, is that QUIC's independent streams avoid head-of-line blocking when many small objects are in flight.
 
 Median load time vs loss, small.html
-![Uploading image.png…]()
+<img width="1100" height="700" alt="image" src="https://github.com/user-attachments/assets/4e891a61-7abc-45a2-8e79-bbbe414f9edf" />
 Median load time vs loss, big.html
-![Uploading image.png…]()
+<img width="1100" height="700" alt="image" src="https://github.com/user-attachments/assets/293a2ea1-cff4-4402-bca1-d26c453f3597" />
 
 Effect of the loopback MTU. In our first full run the loopback MTU was the default 65536 bytes, and HTTP/3 was much slower under loss (speedups of 0.06 to 0.58). After setting the MTU to 1500 the result reversed. We believe this is because TCP sends very large segments on a 65536-byte MTU, so a given loss rate hits far fewer TCP packets than QUIC's roughly 1200-byte datagrams. This shows that emulation settings can change the conclusion.
 
