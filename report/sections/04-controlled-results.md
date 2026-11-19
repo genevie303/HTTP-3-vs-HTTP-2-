@@ -27,6 +27,7 @@ Research question 2: many small files vs one large file. Both pages showed the s
 Median load time vs loss, small.html
 ![Uploading image.png…]()
 Median load time vs loss, big.html
+![Uploading image.png…]()
 
 Effect of the loopback MTU. In our first full run the loopback MTU was the default 65536 bytes, and HTTP/3 was much slower under loss (speedups of 0.06 to 0.58). After setting the MTU to 1500 the result reversed. We believe this is because TCP sends very large segments on a 65536-byte MTU, so a given loss rate hits far fewer TCP packets than QUIC's roughly 1200-byte datagrams. This shows that emulation settings can change the conclusion.
 
