@@ -16,7 +16,7 @@ Figures 1 and 2 show the speedup (median HTTP/2 time divided by median HTTP/3 ti
 Speedup heatmap, small.html
 <img width="1100" height="700" alt="image" src="https://github.com/user-attachments/assets/07458510-2b11-4c21-a43d-63511ce0b834" />
 Speedup heatmap, big.html
-![alt text](image-1.png)
+<img width="1100" height="700" alt="image" src="https://github.com/user-attachments/assets/4caadc46-f952-46f6-b186-c8073d567e0d" />
 
 Research question 1: effect of loss and latency. HTTP/3 was faster than HTTP/2 in 21 of the 24 conditions. Even without packet loss, HTTP/3 was ahead at RTT 100 and 300 ms, with speedups of 1.26 to 1.30 on both pages. At RTT 20 ms the gain was 1.21 for small.html but only 1.04 for big.html. With 3 % and 5 % loss the advantage was largest: speedups were between 1.30 and 2.68 for small.html and between 1.51 and 2.16 for big.html. For example, small.html at RTT 20 ms and 3 % loss took 1.64 s with HTTP/2 and 0.61 s with HTTP/3.
 
